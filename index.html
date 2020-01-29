@@ -1,0 +1,31 @@
+<html>
+
+<head>
+    <title>Snake Game</title>
+    <style>
+        canvas {
+            display: block;
+            margin: 0 auto;
+        }
+
+        #cont-snake {
+            position: absolute;
+            top: 4%;
+            left: 35%;
+        }
+
+        #child-snake {
+            height: 30px;
+            width: 30px;
+        }
+    </style>
+</head>
+<div class="snake-game">
+    <canvas id="snake" width="608" height="608"></canvas>
+    <div id="cont-snake">
+        <img id="child-snake" src="img/snake.jpg">
+    </div>
+</div>
+<script src="snake.js"></script>
+
+</html>
