@@ -10,22 +10,42 @@
 
         #cont-snake {
             position: absolute;
-            top: 4%;
-            left: 35%;
+            top: 104px;
+            left: 67.6%;
         }
 
         #child-snake {
-            height: 30px;
-            width: 30px;
+            height: 33px;
+            width: 33px;
+            display: none;
+        }
+
+        .game-over {
+            height: 94px;
+            width: 220px;
+            position: absolute;
+            left: 43%;
+            right: auto;
+            display: none;
+        }
+        .buttons{
+            position: absolute;
+            left: 40%;
+            right: auto;
+            top: 5%;
         }
     </style>
 </head>
 <div class="snake-game">
+    <div class="buttons">
+        <button id="level-1-btn">Level One</button>
+        <button id="level-2-btn">Level Two</button>
+        <button id="level-3-btn">Level Three</button>
+    </div>
     <canvas id="snake" width="608" height="608"></canvas>
     <div id="cont-snake">
         <img id="child-snake" src="img/snake.jpg">
     </div>
 </div>
 <script src="snake.js"></script>
-
 </html>
